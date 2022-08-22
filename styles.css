@@ -1,126 +1,69 @@
-main > div{
+main{
+  padding: 100px 0 10px 30px;
+
+}
+
+.card{
   background: white;
-  float: left;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
   width: 400px;
-  height: 200px;
   margin-right: 30px;
-  margin-top: 100px;
-  margin-right:;
   padding: 50px;
-  border: 0px solid;
-  border-radius: 3%;
+  border-radius: 20px;
   color: aliceblue;
 }
 
-.box1{
-  background-color: background: rgb(255,218,0);
+.card1{
+  background: rgb(255,218,0);
   background: linear-gradient(90deg, rgba(255,218,0,0.7231267507002801) 0%, rgba(158,8,144,0.7875525210084033) 93%);
-  position: relative;
-
 }
 
 
-.box1::before{
-  content: open-quote;
+.card::before{
   top: -40px;
-  right: -60px;
-  opacity: 0.4;
-  overflow: hidden;
-}
-
-.box1::after{
-  content: close-quote;
-  bottom: -100px;
-  right: -15px;
+  right: -70px;
   opacity: 0.5;
 }
 
-.box1::before,
-.box1::after{
+.card::after{
+  bottom: -100px;
+  right: -20px;
+  opacity: 0.5;
+}
+
+.card::before,
+.card::after{
+  content: '';
   background-color: white;
   display: block;
   width: 200px;
   height: 200px;
-  border-radius: 100%;
+  border-radius: 50%;
   text-align: right;
   position: absolute
   ;
 }
-img{
+
+.img{
   position: absolute;
   right: 35px;
 }
 
 
-.box2{
-background-color:background: rgb(0,255,209);
+.card2{
+background: rgb(0,255,209);
 background: linear-gradient(90deg, rgba(0,255,209,0.7231267507002801) 0%, rgba(8,59,158,0.7875525210084033) 93%);
-position: relative;
 }
 
-.box2::before{
-  content: open-quote;
-  top: -40px;
-  right: -60px;
-  opacity: 0.4;
-  overflow: hidden;
-}
-
-.box2::after{
-  content: close-quote;
-  bottom: -100px;
-  right: -15px;
-  opacity: 0.5;
-}
-
-.box2::before,
-.box2::after{
-  background-color: white;
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  text-align: right;
-  position: absolute
-  ;
-}
-
-
-.box3{
+.card3{
   background: rgb(0,255,8);
   background: linear-gradient(90deg, rgba(0,255,8,0.865983893557423) 31%, rgba(21,158,8,0.9108018207282913) 100%);
-  position: relative;
-}
-
-.box3::before{
-  content: open-quote;
-  top: -40px;
-  right: -60px;
-  opacity: 0.4;
-  overflow: hidden;
-}
-
-.box3::after{
-  content: close-quote;
-  bottom: -100px;
-  right: -15px;
-  opacity: 0.5;
-}
-
-.box3::before,
-.box3::after{
-  background-color: white;
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  text-align: right;
-  position: absolute
-  ;
 }
 
 .line1{
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-size: 20px;
 }
 
@@ -130,6 +73,6 @@ position: relative;
 
 .line3{
   font-size: 15px;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
